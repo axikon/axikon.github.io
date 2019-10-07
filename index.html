@@ -21,11 +21,34 @@
       margin: auto;
       display: block;
     }
+    .contents {
+      border: solid 1px #ff6a00;
+      background-color: #fffba9;
+    }
   </style>
+  <script type="text/javascript" src="script.js"></script>
+<!--   <script type="text/javascript">
+    document.onkeydown = keydown;
+    function keydown() {
+    var target = document.getElementById("cell");
+    var num = event.keyCode - 48
+    if (0<= num && num <= 9) {
+      target.innerHTML = num;
+    }
+  }
+  </script>
+ -->
+
   </head>
   <body>
     <h1>Hello PWA.</h1>
-    <img src="./pwa-logo.svg" alt="PWA logo" class="image" />
-    <a href="p.html">p.html</a>
+<!--     <img src="./pwa-logo.svg" alt="PWA logo" class="image" /> -->
+  <div onkeydown="keydown()">
+    <span id="cell" class=contents> </span>
+  </div>
+
+ 
+  <a href="p.html">p.html</a>
+  <button>button</button>
   </body>
 </html>
